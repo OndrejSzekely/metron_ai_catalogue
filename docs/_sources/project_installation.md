@@ -21,7 +21,7 @@ Follow the instruction steps.
     ```
 2. Go into repository root folder and run
     ```shell
-    docker build -t metron_ai/datasets:latest .
+    docker build -t metron_ai/catalogue:latest .
     ```
 3. Start the container by running the script
     ```shell

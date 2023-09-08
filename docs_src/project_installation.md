@@ -27,7 +27,3 @@ Follow the instruction steps.
     ```shell
     docker build -t metron_ai/datasets:latest .
     ```
-4. Start the container by running the script
-    ```shell
-    ./run_container.sh
-    ```
