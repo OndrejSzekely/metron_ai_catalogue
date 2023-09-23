@@ -1,0 +1,4 @@
+[core]
+    remote = azure-private
+['remote "azure-private"']
+    url = azure://catalogue-store-private/
