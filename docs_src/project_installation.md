@@ -27,3 +27,5 @@ Follow the instruction steps.
     ```shell
     ./build_container.sh
     ```
+4. All *Catalogue* artifacts are stored on *Microsoft Azure Storage Account*. To access the data you need to populate
+    variables in `.env` file.

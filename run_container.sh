@@ -10,4 +10,4 @@ while [ "$1" != "" ]; do
 
 done
 
-docker run --rm -it ${mounted_volumes} -v $(pwd):/metron_ai_catalogue_repo --name metron_ai_catalogue metron_ai/catalogue:latest
+docker run --rm -it --env-file .env ${mounted_volumes} -v $(pwd):/metron_ai_catalogue_repo --name metron_ai_catalogue metron_ai/catalogue:latest
