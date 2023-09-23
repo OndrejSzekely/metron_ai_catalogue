@@ -25,5 +25,5 @@ Follow the instruction steps.
     ```
 3. Go into repository root folder and run
     ```shell
-    docker build -t metron_ai/datasets:latest .
+    ./build_container.sh
     ```
