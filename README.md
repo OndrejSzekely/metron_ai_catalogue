@@ -22,7 +22,6 @@ configurations of the artifacts.
 - [Status](#status)
 - [Documentation](#documentation)
   - [Building \& running documentation locally](#building--running-documentation-locally)
-      - [:bulb: Reference Installation Steps :point\_down:  ](#bulb-reference-installation-steps-point_down--)
 
 ## How to run
 
@@ -50,7 +49,7 @@ Online documentation of the latest commit on the *main* branch can be found [her
    software components). Create Python **3.7** virtual environment using Python dependency management tool you are using
    (e.g. Conda, Pipenv, etc...).
 
-    ##### :bulb: Reference Installation Steps :point_down: <!-- omit in toc --> <!-- markdownlint-disable MD001 MD023-->
+    ##### :bulb: Reference Installation Steps :point_down:   <!-- markdownlint-disable MD001 MD023--> <!-- omit in toc -->
 
     It is recommended to use Anaconda channel ([how to get Anaconda](https://www.anaconda.com/products/individual)),
     which also provides installation management of non-Python software components, and Python. Run following
@@ -93,7 +92,7 @@ Online documentation of the latest commit on the *main* branch can be found [her
    sphinx-build -b html docs_src docs
    ```
 
-   ##### :bulb: Reference Installation Steps :point_down: <!-- omit in toc --> <!-- markdownlint-disable MD024 -->
+   ##### :bulb: Reference Installation Steps :point_down: <!-- markdownlint-disable MD024 --> <!-- omit in toc -->
 
    In the activated environment run following command:
   
