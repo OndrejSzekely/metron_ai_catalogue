@@ -8,3 +8,4 @@ Detailed artifacts overview contained in *Metron AI: Catalogue* repository.
     :caption: Contents:
 
     catalogue/datasets/nemo
+    catalogue/datasets/ardagen
