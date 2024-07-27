@@ -5,8 +5,13 @@
     "dictionaries": [],
     "words": [
         "metron",
-        "imgs"
+        "imgs",
+        "ardagen",
+        "nemo"
     ],
-    "ignoreWords": [],
+    "ignoreWords": [
+        "toctree",
+        "maxdepth"
+    ],
     "import": []
 }
