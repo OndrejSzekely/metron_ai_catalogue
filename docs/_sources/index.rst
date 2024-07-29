@@ -11,5 +11,6 @@ Metron AI - Catalogue Docs
    :caption: Contents:
 
    project_installation
+   catalogue
    guides
    development_notes

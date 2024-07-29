@@ -1,0 +1,17 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "metron",
+        "imgs",
+        "ardagen",
+        "nemo"
+    ],
+    "ignoreWords": [
+        "toctree",
+        "maxdepth"
+    ],
+    "import": []
+}

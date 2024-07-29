@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Project Installation &#8212; Metron AI - Datasets 0.1.0 documentation</title>
+    <title>Project Installation &#8212; Metron AI - Catalogue 0.1.0 documentation</title>
   
   
   
@@ -59,7 +59,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Development Notes" href="development_notes.html" />
-    <link rel="prev" title="Metron AI - Datasets Docs" href="index.html" />
+    <link rel="prev" title="Metron AI - Catalogue Docs" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -131,7 +131,7 @@
   
   
   
-    <p class="title logo__title">Metron AI - Datasets 0.1.0 documentation</p>
+    <p class="title logo__title">Metron AI - Catalogue 0.1.0 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -310,20 +310,17 @@ document.write(`
 <p>Follow the instruction steps.</p>
 <ol class="arabic">
 <li><p>Download the repository using</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone --recurse-submodules https://github.com/OndrejSzekely/metron_ai_datasets.git
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone --recurse-submodules https://github.com/OndrejSzekely/metron_ai_catalogue.git
 </pre></div>
 </div>
 </li>
 <li><p>Go into repository root folder and run</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docker build -t metron_ai/datasets:latest .
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./build_container.sh
 </pre></div>
 </div>
 </li>
-<li><p>Start the container by running the script</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./run_container.sh
-</pre></div>
-</div>
-</li>
+<li><p>All <em>Catalogue</em> artifacts are stored on <em>Microsoft Azure Storage Account</em>. To access the data you need to populate
+variables in <code class="docutils literal notranslate"><span class="pre">.env</span></code> file.</p></li>
 </ol>
 </section>
 </section>
@@ -343,7 +340,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Metron AI - Datasets Docs</p>
+        <p class="prev-next-title">Metron AI - Catalogue Docs</p>
       </div>
     </a>
     <a class="right-next"
