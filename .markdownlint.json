@@ -1,0 +1,16 @@
+{
+    "MD033": {
+        "allowed_elements": [
+            "h1",
+            "p",
+            "kbd",
+            "img",
+            "h3",
+            "i",
+            "span"
+        ]
+    },
+    "MD013": {
+        "line_length": 180
+    }
+}
