@@ -36,4 +36,17 @@ Dataset names are encoded in following convention:
 
 :::
 
-Example dataset name can be **U-box|singleCam-C00F00L01P01**.
+Dataset name complying all rules could be **U-box|singleCam-C00F00L01P01**.
+
+## Datasets Use
+
+Run *Catalogue* container and mount `<ISAAC_SIM_PATH>/metron_ai_ardagen/conf/scenarios/` path to the container. Go
+into the mounted folder inside the container and run:
+
+```shell
+dvc get https://github.com/OndrejSzekely/metron_ai_catalogue datasets/ardagen/<ARDAGEN_DATASET_NAME>
+```
+
+## Datasets Overview
+
+

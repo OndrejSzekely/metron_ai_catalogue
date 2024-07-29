@@ -297,6 +297,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-codename-convention">Dataset Codename Convention</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-use">Datasets Use</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-overview">Datasets Overview</a></li>
 </ul>
             </nav>
         </div>
@@ -352,7 +354,18 @@ There is no common definition, it is use case specific. <em>dd</em> denotes <str
 </tr>
 </tbody>
 </table>
-<p>Example dataset name can be <strong>U-box|singleCam-C00F00L01P01</strong>.</p>
+<p>Dataset name complying all rules could be <strong>U-box|singleCam-C00F00L01P01</strong>.</p>
+</section>
+<section id="datasets-use">
+<h2>Datasets Use<a class="headerlink" href="#datasets-use" title="Permalink to this heading">#</a></h2>
+<p>Run <em>Catalogue</em> container and mount <code class="docutils literal notranslate"><span class="pre">&lt;ISAAC_SIM_PATH&gt;/metron_ai_ardagen/conf/scenarios/</span></code> path to the container. Go
+into the mounted folder inside the container and run:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dvc get https://github.com/OndrejSzekely/metron_ai_catalogue datasets/ardagen/&lt;ARDAGEN_DATASET_NAME&gt;
+</pre></div>
+</div>
+</section>
+<section id="datasets-overview">
+<h2>Datasets Overview<a class="headerlink" href="#datasets-overview" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -399,6 +412,8 @@ There is no common definition, it is use case specific. <em>dd</em> denotes <str
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-codename-convention">Dataset Codename Convention</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-use">Datasets Use</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-overview">Datasets Overview</a></li>
 </ul>
   </nav></div>
 

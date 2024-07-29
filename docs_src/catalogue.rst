@@ -4,8 +4,8 @@ Catalogue
 Detailed artifacts overview contained in *Metron AI: Catalogue* repository.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
     :caption: Contents:
 
-    catalogue/datasets/nemo
-    catalogue/datasets/ardagen
+    catalogue/datasets
+    catalogue/metron_ai_ardagen
