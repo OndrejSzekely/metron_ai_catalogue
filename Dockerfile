@@ -1,3 +1,3 @@
-FROM python:3.10.12
+FROM python:3.14.0a3
 RUN pip install "dvc[all]"
 CMD [ "bash" ]
