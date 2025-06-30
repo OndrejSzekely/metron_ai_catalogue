@@ -28,7 +28,7 @@ configurations of the artifacts.
 After you clone the repository, go into the root folder in a terminal and run:
 
 ```shell
-docker build -t metron_ai/datasets:latest .
+docker build -t metron_ai/catalogue:latest . 
 chmod +x run_container.sh
 ./run_container.sh
 ```
