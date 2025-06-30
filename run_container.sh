@@ -15,8 +15,5 @@ docker run \
     -it \
     --env-file .env ${mounted_volumes} \
     --user "$(id -u):$(id -g)" \
-    --volume "/etc/passwd:/etc/passwd:ro" \
-    --volume "/etc/group:/etc/group:ro" \
-    --volume "${HOME}:/${HOME}:ro" \
     -v $(pwd):/metron_ai_catalogue_repo \
     --name metron_ai_catalogue metron_ai/catalogue:latest
