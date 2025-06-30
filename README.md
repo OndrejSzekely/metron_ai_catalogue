@@ -71,6 +71,8 @@ Online documentation of the latest commit on the *main* branch can be found [her
 
     ##### :bulb: Reference Installation Steps :point_down: <!-- omit in toc -->
   
+    Run following command:
+
     ```shell
     uv sync --all-extras --frozen
     ```
@@ -101,7 +103,7 @@ Online documentation of the latest commit on the *main* branch can be found [her
 
    ##### :bulb: Reference Installation Steps :point_down: <!-- omit in toc -->
 
-   In repository's root folder and activated environment run a HTTP server with the documentation:
+   In repository's root folder and run a HTTP server with the documentation:
 
    ```shell
    uv run python -m http.server --directory docs 4444
