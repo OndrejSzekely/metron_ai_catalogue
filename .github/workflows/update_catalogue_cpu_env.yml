@@ -1,0 +1,47 @@
+name: Update Catalogue CPU Environment
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-code-change:
+    runs-on: ubuntu-latest
+    outputs:
+      project_requirements: ${{ steps.code_check.outputs.project_requirements }}
+    steps:
+      - name: Checkout Catalogue repo
+        uses: actions/checkout@v4
+      - name: Check code change
+        id: code_check
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            project_requirements:
+              - 'Dockerfile'
+              - 'pyproject.toml'
+  call-setup-catalogue-env-and-run:
+    needs: check-code-change
+    uses: OndrejSzekely/metron_ai_catalogue/.github/workflows/set_up_catalogue_cpu_env_and_run_base.yml@main
+    with:
+      if: ${{ needs.check-code-change.outputs.project_requirements == 'true' }}
+      run_commands: |
+        echo "Catalogue CPU environment successfully initialized"
+  skip-workflow:
+    needs: check-code-change
+    if: ${{ needs.check-code-change.outputs.project_requirements == 'false' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skipping Action
+        run: echo "Action is skipped"
