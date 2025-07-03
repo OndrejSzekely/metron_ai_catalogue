@@ -35,7 +35,7 @@ chmod +x run_container.sh
 
 ## Status
 
-[![License: GPL v3](https://img.shields.io/github/license/ondrejszekely/metron_ai_catalogue)](https://www.gnu.org/licenses/gpl-3.0) [![Release](https://img.shields.io/github/v/release/ondrejszekely/metron_ai_catalogue)](https://github.com/OndrejSzekely/metron_ai_catalogue/releases) [![Last commit](https://img.shields.io/github/last-commit/ondrejszekely/metron_ai_catalogue/develop)](https://github.com/OndrejSzekely/metron_ai_catalogue/compare/main...develop) <!-- markdownlint-disable MD013 -->
+[![License: GPL v3](https://img.shields.io/github/license/ondrejszekely/metron_ai_catalogue)](https://www.gnu.org/licenses/gpl-3.0) [![Release](https://img.shields.io/github/v/release/ondrejszekely/metron_ai_catalogue)](https://github.com/OndrejSzekely/metron_ai_catalogue/releases) [![Last commit](https://img.shields.io/github/last-commit/ondrejszekely/metron_ai_catalogue/main)](https://github.com/OndrejSzekely/metron_ai_catalogue/compare/main.) <!-- markdownlint-disable MD013 -->
 
 ## Documentation
 
