@@ -6,9 +6,6 @@ dependencies = [
   "dvc[all]"
 ]
 
-[tool.uv]
-python-preference = "only-system"
-
 [project.optional-dependencies]
 docs = [
     "myst-parser==1.0.0",
