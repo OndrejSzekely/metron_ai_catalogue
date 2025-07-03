@@ -2,9 +2,7 @@
   "name": "Metron AI Catalogue",
   "build": {
     "dockerfile": "../Dockerfile",
-    "args": {
-      "UV_INSTALL_DIR": ""
-    }
+    "target": "uv_env_base"
   },
   "runArgs": [
     "--ipc=host",
@@ -28,8 +26,5 @@
       ]
     }
   },
-  "remoteUser": "metron",
-  "remoteEnv": {
-    "UV_INSTALL_DIR": "/home/metron"
-  }
+  "remoteUser": "metron"
 }
