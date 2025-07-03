@@ -1,8 +1,33 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 default_language_version:
-    python: python3.7
+    python: python3.12
 repos:
+- repo: https://github.com/Lucas-C/pre-commit-hooks
+  rev: v1.4.2
+  hooks:
+    - id: forbid-crlf
+      exclude: docs
+    - id: remove-crlf
+      exclude: docs
+    - id: forbid-tabs
+      exclude: docs
+    - id: remove-tabs
+      args: [--whitespaces-count, '2']  # defaults to: 4
+      exclude: docs
+    - id: insert-license
+      files: \.py$
+      args:
+        - --license-filepath
+        - LICENSE_SRC
+        - --use-current-year
+      exclude: docs
+-   repo: local
+    hooks:
+    -   id: sphinx-apidocs
+        name: create API docs
+        language: system
+        entry: bash -c 'sphinx-apidoc -o docs_src/api -f -t docs_src/_template  --private --module-first -d 1 --no-toc -e  . || true'
 -   repo: local
     hooks:
     -   id: sphinx
