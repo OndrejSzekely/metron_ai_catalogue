@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Load all variables from .env into environment
+export $(grep -v '^#' .env | xargs)
+
 # iterate over all positional arguments which represent the mounting volumes
 mounted_volumes=""
 while [ "$1" != "" ]; do
@@ -11,9 +14,9 @@ while [ "$1" != "" ]; do
 done
 
 docker run \
-    --rm \
     -it \
     --env-file .env ${mounted_volumes} \
     --user "$(id -u):$(id -g)" \
-    -v $(pwd):/metron_ai_catalogue_repo \
-    --name metron_ai_catalogue metron_ai/catalogue:latest
+    -v $(pwd):$CATALOGUE_MOUNTING_PATH \
+    --name metron_ai_catalogue metron_ai/catalogue:latest \
+    bash
