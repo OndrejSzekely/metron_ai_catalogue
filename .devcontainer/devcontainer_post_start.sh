@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH="$(pwd)/.venv/bin:$UV_INSTALL_DIR/:$PATH"
+export PATH="$(pwd)/.venv/bin:$PATH"
 
 source $(pwd)/.venv/bin/activate
 
