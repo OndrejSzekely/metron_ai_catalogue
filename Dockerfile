@@ -2,6 +2,7 @@ FROM ubuntu:22.04 as uv_env_base
 ARG SETUP_DIR=/home/metron
 ARG USERNAME=metron
 ARG UV_INSTALL_DIR=/usr/local/bin
+ARG CATALOGUE_MOUNTING_PATH
 
 
 RUN apt-get update && apt-get install -y curl git

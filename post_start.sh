@@ -8,10 +8,11 @@
 
 export PATH="${CATALOGUE_MOUNTING_PATH}/.venv/bin:$PATH"
 
-source $CATALOGUE_MOUNTING_PATH/.venv/bin/activate
-
 # Install pre-commit hooks
 (
+    source $CATALOGUE_MOUNTING_PATH/.venv/bin/activate
     cd $CATALOGUE_MOUNTING_PATH
     pre-commit install
 )
+
+echo "source $CATALOGUE_MOUNTING_PATH/.venv/bin/activate" >> ~/.bashrc
