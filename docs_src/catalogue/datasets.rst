@@ -5,5 +5,4 @@ Datasets
     :maxdepth: 2
     :caption: Contents:
 
-    datasets/nemo
     datasets/ardagen
