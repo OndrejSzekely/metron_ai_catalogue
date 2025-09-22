@@ -16,24 +16,24 @@ Dataset names are encoded in following convention:
 :align: center
 :header-rows: 0
 
-*   - <p style="color:#F9895C;">U-<i><use_case_name></i></p> <!-- markdownlint-disable MD004 MD007 MD030-->
-    - Denotes use case/project name for which the datasets are generated. *<use_case_name>* is arbitrary string of any
+*   <p style="color:#F9895C;">U-<i><use_case_name></i></p> <!-- markdownlint-disable MD004 MD007 MD030-->
+    Denotes use case/project name for which the datasets are generated. *<use_case_name>* is arbitrary string of any
     characters number.
-*   - <p style="color:#65BCD8;">|<i><dataset_name></i>-</p>
-    - Denotes dataset name. *<dataset_name>* is arbitrary string of any
+*   <p style="color:#65BCD8;">|<i><dataset_name></i>-</p>
+    Denotes dataset name. *<dataset_name>* is arbitrary string of any
     characters number.
-*   - <p style="color:#F8D643;">C<i>dd</i></p>
-    - Denotes dataset complexity level from the use case's task perspective. Therefore, there is no common definition,
+*   <p style="color:#F8D643;">C<i>dd</i></p>
+    Denotes dataset complexity level from the use case's task perspective. Therefore, there is no common definition,
     but it is use case specific. *dd* denotes **required** number of digits. *00* denotes the lowest complexity.
-*   - <p style="color:#545A5E;">F<i>dd</i></p>
-    - Denotes dataset sensors fidelity -e.g. camera sensor rendering quality or LiDAR physics laws correctness.
+*   <p style="color:#545A5E;">F<i>dd</i></p>
+    Denotes dataset sensors fidelity -e.g. camera sensor rendering quality or LiDAR physics laws correctness.
     There is no common definition, it is use case specific. *dd* denotes **required** number of digits.
     *00* denotes the lowest fidelity.
-*   - <p style="color:#ef5350;">L<i>dd</i></p>
-    - Denotes used labels setup. It can be specific sensor set or different output format.
+*   <p style="color:#ef5350;">L<i>dd</i></p>
+    Denotes used labels setup. It can be specific sensor set or different output format.
     There is no common definition, it is use case specific. *dd* denotes **required** number of digits.
-*   - <p style="color:#8bc34a;">P<i>dd</i></p>
-    - Denotes dataset part. *dd* denotes **required** number of digits.
+*   <p style="color:#8bc34a;">P<i>dd</i></p>
+    Denotes dataset part. *dd* denotes **required** number of digits.
 
 :::
 
