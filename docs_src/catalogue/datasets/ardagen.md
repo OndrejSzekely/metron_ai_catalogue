@@ -72,6 +72,7 @@ The most simplistic dataset with two objects - paper box and blue container. The
 | --- | --- |
 | **Dataset size** | 10 image samples |
 | **ArDaGen commit sha** | [`edde3ff89aca39443af27c9ae8e0330c17395173`](https://github.com/OndrejSzekely/metron_ai_ardagen/commit/edde3ff89aca39443af27c9ae8e0330c17395173) |
+| **Catalogue path** | `datasets/ardagen/development/U-dev\|ardagen_mocked_env-C00F00L00P00` |
 | **Scenario YAML** | `ardagen_scenarios/U-dev\|ardagen_mocked_env-C00F00L00P00.yaml` |
 
 
